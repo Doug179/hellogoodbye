@@ -13,36 +13,15 @@
         android:layout_width="347dp"
         android:layout_height="369dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
         android:alpha="0.5"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/hello" />
-
-    <ImageButton
-        android:text="Click Me"
-        android:id="@+id/imageButton2"
-        android:layout_width="192dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="65dp"
-        android:background="@drawable/button1"
-        android:contentDescription="@null"
-        android:scaleType="fitXY"
-        android:textAlignment="center"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:srcCompat="@drawable/hello"
+        android:contentDescription="@string/hellodesc" />
 
     <TextView
         android:id="@+id/textView"
@@ -60,5 +39,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="175dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/button1"
+        android:text="@string/click_me"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
