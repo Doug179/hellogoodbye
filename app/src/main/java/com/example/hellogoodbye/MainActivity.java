@@ -3,6 +3,7 @@ package com.example.hellogoodbye;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.clickme_btn1);
         button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View Button) {
+            public void onClick(View v) {
                 // Do something in response to button click
+                Log.i("Doug","button clicked");
             }
         });
 
