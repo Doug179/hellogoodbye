@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    boolean hello;
+    Boolean hello=true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,22 +25,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something in response to button click
                 Log.i("Doug","button clicked");
-                hello=hello;
+                hello=!hello;
 
-                if(hello=true) {
+                if(hello) {
                     textviewhello.setVisibility(View.VISIBLE);
                     imageviewhello.setVisibility(View.VISIBLE);
                     textviewgoodbye.setVisibility(View.INVISIBLE);
                     imageviewgoodbye.setVisibility(View.INVISIBLE);
-                    else
+                }
+                    else {
                     textviewhello.setVisibility(View.INVISIBLE);
                     imageviewhello.setVisibility(View.INVISIBLE);
                     textviewgoodbye.setVisibility(View.VISIBLE);
                     imageviewgoodbye.setVisibility(View.VISIBLE);
-
+                }
                 }
             }
-        });
+        );
 
 
     }
